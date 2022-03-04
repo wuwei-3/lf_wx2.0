@@ -4,8 +4,8 @@ const app = getApp()
 
 Page({
   data: {
-    username: '',
-    phone: '',
+    username: '19955797645',
+    password: '',
   },
   // 登录
   onLogin() {

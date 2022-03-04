@@ -1,4 +1,5 @@
 // pages/settting/index.js
+// import Dialog from '../../miniprogram/@vant/weapp/dist/dialog/dialog';
 Page({
 
   /**
@@ -6,9 +7,9 @@ Page({
    */
   data: {
     show: false,
-    show2:false,
-    show3:true,
-    columns: ['男','女'],
+    show2: false,
+    show3: false,
+    columns: ['男', '女'],
     currentDate: new Date().getTime(),
     minDate: new Date().getTime(),
     formatter(type, value) {
@@ -21,6 +22,26 @@ Page({
       return value;
     },
   },
+  // 退出回到登录页
+  loginLout() {
+    this.setData({
+      show3: true
+    })
+  },
+  onCloseConfirm() {
+    wx.showTabBar({
+      animation: true,
+    })
+    wx.redirectTo({
+      url: '/pages/login/index',
+    })
+  },
+  // 退出弹窗
+  onClose3(val) {
+    this.setData({
+      show3: false
+    })
+  },
   // 生日时间选择
   onInput(event) {
     this.setData({
@@ -28,7 +49,7 @@ Page({
     });
   },
   // 性别选择
-  onChangeSex(){
+  onChangeSex() {
     this.onClose2()
   },
   // 生日确认框
@@ -66,6 +87,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // Dialog.confirm({
+    //     title: '标题',
+    //     message: '弹窗内容',
+    //   })
+    //   .then(() => {
+    //     // on confirm
+    //   })
+    //   .catch(() => {
+    //     // on cancel
+    //   });
   },
 
   /**

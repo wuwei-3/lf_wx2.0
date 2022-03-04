@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/settting/index",
-    "pages/index/index",
     "pages/login/index",
+    "pages/settting/index",
+    "pages/stores/index",
+    "pages/index/index",
     "pages/detail/index",
-    "pages/home/index",
-    "pages/stores/index"
+    "pages/home/index"
   ],
   "tabBar": {
     "selectedColor": "#f2b940",

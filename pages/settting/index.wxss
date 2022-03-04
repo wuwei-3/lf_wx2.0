@@ -7,6 +7,13 @@
   background: rgba(246, 247, 249);
 }
 
+.g-lout {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .g-basic {
   background: white;
   padding: 0 8px;

@@ -10,7 +10,7 @@
       <van-field value="{{ username }}" placeholder="请输入用户名" error="{{false}}" />
     </view>
     <view>
-      <van-field value="{{ phone }}" placeholder="请输入手机号" error="{{false}}" />
+      <van-field value="{{ password }}" placeholder="请输入密码" error="{{false}}" />
     </view>
     <view class="n-button">
       <van-button type="primary" bindtap="onLogin">登录</van-button>
