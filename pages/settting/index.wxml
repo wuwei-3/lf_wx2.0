@@ -1,2 +1,43 @@
 <!--pages/settting/index.wxml-->
-<text>pages/settting/index.wxml</text>
+<view class="setting">
+  <view class="g-basic">
+    <view class="c-row1"><text>头像</text>
+      <view class="c-icon">
+        <van-icon name="manager-o" class="manager" />
+      </view>
+    </view>
+    <view class="c-row2"><text>昵称</text><text>wuwei</text></view>
+    <view class="c-row4">
+      <view>绑定手机</view>
+      <view class="w-r">
+        <text>19955797645</text>
+      </view>
+    </view>
+    <view></view>
+  </view>
+  <view class="g-basic2">
+    <view class="c-row4"><text>性别</text>
+      <view class="w-r" bindtap="onSex">
+        <text>男</text>
+        <van-icon name="arrow" />
+      </view>
+    </view>
+    <view class="c-row4"><text>生日</text>
+      <view class="w-r" bindtap="onBirthday">
+        <text>请选择</text>
+        <van-icon name="arrow" />
+      </view>
+    </view>
+  </view>
+  <view class="g-button">
+    <van-button type="primary" class="n-btn">退出登录</van-button>
+  </view>
+  <!-- 生日时间弹窗 -->
+  <van-popup show="{{ show }}" position="bottom" bind:close="onClose">
+    <van-datetime-picker type="date" value="{{ currentDate }}" bind:input="onInput" min-date="{{ minDate }}" formatter="{{ formatter }}" bind:confirm="timeConfirm" bind:cancel="onClose" />
+  </van-popup>
+  <!-- 性别弹窗 -->
+  <van-popup show="{{ show2 }}" position="bottom" bind:close="onClose2">
+    <van-picker show-toolbar columns="{{ columns }}" bind:cancel="onClose2" bind:confirm="onChangeSex" bind:change="onChangeSex" />
+  </van-popup>
+</view>

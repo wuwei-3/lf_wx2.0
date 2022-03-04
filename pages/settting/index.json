@@ -1,4 +1,10 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "van-button": "/miniprogram/@vant/weapp/button/index",
+    "van-icon": "/miniprogram/@vant/weapp/icon/index",
+    "van-datetime-picker": "/miniprogram/@vant/weapp/datetime-picker/index",
+    "van-popup": "/miniprogram/@vant/weapp/popup/index",
+    "van-picker": "/miniprogram/@vant/weapp/picker/index"
+  },
   "navigationBarTitleText": "设置"
 }

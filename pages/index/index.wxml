@@ -3,10 +3,10 @@
   <view class="e-top">
     <view>
       <van-icon name="aim" class="p-icon1" /> <text>当前位置</text>
-      <van-icon name="arrow" class="p-icon2" bindtap="onScan"/>
+      <van-icon name="arrow" class="p-icon2" />
     </view>
     <view class="p-right">
-      <van-icon name="scan" />
+      <van-icon name="scan" bindtap="onScan"/>
     </view>
   </view>
   <view class="e-bottom">
@@ -21,7 +21,8 @@
         </view>
       </view>
       <view class="d-right">
-        逛门店
+        <view>逛门店</view>
+        <view>786.0m</view>
       </view>
     </view>
   </view>
