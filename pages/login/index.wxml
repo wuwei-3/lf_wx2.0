@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="r-register">注册</view>
+  <view class="r-title">
+    <view class="e1">登录</view>
+    <view>欢迎来到畅享程序，请使用手机号登录或一键登录</view>
+  </view>
+  <view class="r-main">
+    <view class="n-username">
+      <van-field value="{{ username }}" placeholder="请输入用户名" error="{{false}}" />
+    </view>
+    <view>
+      <van-field value="{{ phone }}" placeholder="请输入手机号" error="{{false}}" />
+    </view>
+    <view class="n-button">
+      <van-button type="primary" bindtap="onLogin">登录</van-button>
+      <view class="n-btn">一键登录</view>
+    </view>
+  </view>
+</view>

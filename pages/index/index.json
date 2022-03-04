@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "van-icon": "/miniprogram/@vant/weapp/icon/index"
+  },
+  "navigationBarTitleText": "门店列表"
 }

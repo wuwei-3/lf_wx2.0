@@ -1,23 +1,28 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}">
-      <view class="userinfo-avatar" bindtap="bindViewTap">
-        <open-data type="userAvatarUrl"></open-data>
-      </view>
-      <open-data type="userNickName"></open-data>
-    </block>
-    <block wx:elif="{{!hasUserInfo}}">
-      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-    </block>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<!--pages/index/index.wxml-->
+<view class="home">
+  <view class="e-top">
+    <view>
+      <van-icon name="aim" class="p-icon1" /> <text>当前位置</text>
+      <van-icon name="arrow" class="p-icon2" bindtap="onScan"/>
+    </view>
+    <view class="p-right">
+      <van-icon name="scan" />
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="e-bottom">
+    <view class="m-card" wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i" wx:key="i">
+      <view class="d-left">
+        <view class="d1"><text>创新产业园店</text><text class="d-text1">正在营业</text> </view>
+        <view class="d2">
+          <van-icon name="aim" class="p-icon1" class="icon1" /><text>高新区创新大道1800号</text>
+        </view>
+        <view class="d3">
+          <van-icon name="underway-o" class="icon2" /><text>06:000 - 22:30</text>
+        </view>
+      </view>
+      <view class="d-right">
+        逛门店
+      </view>
+    </view>
   </view>
 </view>

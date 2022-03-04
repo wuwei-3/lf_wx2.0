@@ -1,14 +1,47 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/login/index",
+    "pages/detail/index",
+    "pages/settting/index",
+    "pages/home/index",
+    "pages/stores/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+  "tabBar": {
+    "selectedColor": "#f2b940",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./pages/asstes/list.png",
+        "selectedIconPath": "./pages/asstes/s_list.png",
+        "text": "门店列表"
+      },
+      {
+        "pagePath": "pages/stores/index",
+        "iconPath": "./pages/asstes/s_cuse.png",
+        "selectedIconPath": "./pages/asstes/cuse.png",
+        "text": "消费记录"
+      },
+      {
+        "pagePath": "pages/settting/index",
+        "iconPath": "./pages/asstes/setting.png",
+        "selectedIconPath": "./pages/asstes/s_setting.png",
+        "text": "设置"
+      }
+    ]
   },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f2b940",
+    "navigationBarTitleText": "畅享生活",
+    "backgroundColor": "#eeeeee",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
 }

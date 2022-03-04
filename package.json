@@ -1,0 +1,22 @@
+{
+  "name": "lf",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuwei-3/lf_wx2.0.git"
+  },
+  "author": "wuewi3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuwei-3/lf_wx2.0/issues"
+  },
+  "homepage": "https://github.com/wuwei-3/lf_wx2.0#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.10.2"
+  }
+}
