@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    locationMain: {},
+    address: '当前位置'
   },
 
   /**
@@ -13,6 +14,22 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+  // 从地图上选取位置
+  getAddress() {
+    let res = this.data.locationMain
+    let that = this
+    wx.chooseLocation({
+      latitude: res.latitude,
+      longitude: res.longitude,
+      complete: (res) => {
+        if (res.errMsg.indexOf('ok') != -1) {
+          that.setData({
+            address: res.name
+          })
+        }
+      }
+    })
   },
   //扫码
   onScan() {
@@ -27,15 +44,14 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    let that = this
     // 刚进入开始定位
     wx.getLocation({
       type: 'wgs84',
       success(res) {
-        const latitude = res.latitude
-        const longitude = res.longitude
-        const speed = res.speed
-        const accuracy = res.accuracy
-        console.log(res);
+        that.setData({
+          locationMain: res
+        })
       }
     })
   },

@@ -7,6 +7,10 @@ Page({
     username: '19955797645',
     password: '',
   },
+  // 获取用户手机号，一键登录
+  getPhoneNumber(val) {
+    console.log(111, val);
+  },
   // 登录
   onLogin() {
     // 跳转到tabbar只能通过switchTo
@@ -17,5 +21,10 @@ Page({
 
   onLoad() {
     wx.hideTabBar()
+    wx.login({
+      success(res) {
+        cl
+      }
+    })
   }
 })

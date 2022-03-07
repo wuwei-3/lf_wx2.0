@@ -54,11 +54,14 @@ border-right: 1px solid #f1f1f1;
 
 .p-right {
   position: absolute;
-  right: 8px;
+  right: 12px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
 }
-
+.p-location{
+  color:#f2b940;
+  margin-right: 4px;
+}
 .d1 {
   height: 40px;
   line-height: 40px;
