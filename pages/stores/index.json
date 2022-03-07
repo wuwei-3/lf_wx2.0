@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "van-search": "/miniprogram/@vant/weapp/search/index"
+  },
   "navigationBarTitleText": "消费记录"
 }

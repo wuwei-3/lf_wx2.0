@@ -14,17 +14,19 @@ Page({
   // 登录
   onLogin() {
     // 跳转到tabbar只能通过switchTo
+    wx.setStorage({
+      key: 'user',
+      data: 'true'
+    })
     wx.switchTab({
       url: '/pages/index/index',
     })
   },
 
   onLoad() {
-    wx.hideTabBar()
+    // wx.hideTabBar()
     wx.login({
-      success(res) {
-        cl
-      }
+      success(res) {}
     })
   }
 })

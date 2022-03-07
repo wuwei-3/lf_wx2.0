@@ -1,4 +1,18 @@
 <!--pages/stores/index.wxml-->
 <view class="store-list">
- 待开发...
+  <view class="t-input">
+    <van-search value="{{ inputVal }}" placeholder="请输入搜索关键词" />
+  </view>
+  <view class="t-list">
+    <view wx:for="{{array}}" wx:for-key="i" wx:for-item="itemName" class="t-main">
+      <view class="m-left">
+        <view class="r1">南岗畅园店</view>
+        <view class="r2"><text>消费时间：</text> 2021.2.3 12:00:00</view>
+        <view class="r3"><text>消费项目：</text> 普通理发</view>
+      </view>
+      <view class="m-right">
+        <text>$123.00</text>
+      </view>
+    </view>
+  </view>
 </view>

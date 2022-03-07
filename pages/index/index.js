@@ -8,12 +8,27 @@ Page({
     locationMain: {},
     address: '当前位置'
   },
-
+  // 进入门店
+  goStore() {
+    // 跳转必须以/开头
+    wx.navigateTo({
+      url: '/pages/detail/index',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // this.goStore()
+    wx.getStorage({
+      key: 'user',
+      success(val) {},
+      fail() {
+        wx.navigateTo({
+          url: '/pages/login/index',
+        })
+      },
+    })
   },
   // 从地图上选取位置
   getAddress() {

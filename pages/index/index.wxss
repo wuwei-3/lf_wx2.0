@@ -35,7 +35,7 @@
 
 .d-left {
   flex: 1;
-border-right: 1px solid #f1f1f1;
+  border-right: 1px solid #f1f1f1;
 }
 
 .d-right {
@@ -46,7 +46,8 @@ border-right: 1px solid #f1f1f1;
   color: #f2b940;
   flex-direction: column;
 }
-.d-right :last-child{
+
+.d-right :last-child {
   font-size: 12px;
   color: #333;
   margin-top: 4px;
@@ -58,10 +59,12 @@ border-right: 1px solid #f1f1f1;
   font-weight: bold;
   font-size: 20px;
 }
-.p-location{
-  color:#f2b940;
+
+.p-location {
+  color: #f2b940;
   margin-right: 4px;
 }
+
 .d1 {
   height: 40px;
   line-height: 40px;
@@ -98,4 +101,5 @@ border-right: 1px solid #f1f1f1;
   height: calc(100% - 48px);
   padding: 8px;
   box-sizing: border-box;
+  overflow: auto;
 }

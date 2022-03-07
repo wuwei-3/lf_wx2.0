@@ -20,7 +20,7 @@
           <van-icon name="underway-o" class="icon2" /><text>06:000 - 22:30</text>
         </view>
       </view>
-      <view class="d-right">
+      <view class="d-right" bindtap="goStore">
         <view>逛门店</view>
         <view>786.0m</view>
       </view>
