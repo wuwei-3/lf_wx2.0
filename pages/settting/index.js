@@ -24,14 +24,12 @@ Page({
   },
   // 退出回到登录页
   loginLout() {
+    wx.hideTabBar()
     this.setData({
       show3: true
     })
   },
   onCloseConfirm() {
-    wx.showTabBar({
-      animation: true,
-    })
     wx.redirectTo({
       url: '/pages/login/index',
     })
@@ -40,6 +38,9 @@ Page({
   onClose3(val) {
     this.setData({
       show3: false
+    })
+     wx.showTabBar({
+      animation: true,
     })
   },
   // 生日时间选择

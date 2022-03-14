@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-field": "/miniprogram/@vant/weapp/field/index",
+    "van-button": "/miniprogram/@vant/weapp/button/index"
+  },
+  "navigationBarTitleText": "注册"
+
+}

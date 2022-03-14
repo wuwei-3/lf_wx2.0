@@ -1,0 +1,40 @@
+/* pages/register/index.wxss */
+
+.register {
+  background: white;
+  width: 100%;
+}
+
+.r-title {
+  height: 48px;
+  line-height: 48px;
+  margin-top: 12px;
+  font-size: 16px;
+  padding: 0 12px;
+}
+
+.r-top {
+  margin-top: 32px;
+}
+
+.pt12 {
+  margin-bottom: 12px;
+}
+
+.r-btn {
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.r-btn .van-button--primary {
+  background: #f2b940;
+  border: 0;
+  margin: 0 32px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.r-text {
+  text-align: center;
+  color: rgba(181, 181, 181);
+}

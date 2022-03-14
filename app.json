@@ -5,7 +5,8 @@
     "pages/settting/index",
     "pages/detail/index",
     "pages/login/index",
-    "pages/home/index"
+    "pages/home/index",
+    "pages/register/index"
   ],
   "tabBar": {
     "selectedColor": "#f2b940",

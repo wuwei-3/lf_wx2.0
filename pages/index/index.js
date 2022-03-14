@@ -18,11 +18,18 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onShow: function (options) {
     // this.goStore()
+    // return wx.navigateTo({
+    //   url: '/pages/register/index',
+    // })
     wx.getStorage({
       key: 'user',
-      success(val) {},
+      success(val) {
+        wx.showTabBar({
+          animation: true,
+        })
+      },
       fail() {
         wx.navigateTo({
           url: '/pages/login/index',
@@ -69,13 +76,6 @@ Page({
         })
       }
     })
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
   },
 
   /**

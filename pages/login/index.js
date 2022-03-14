@@ -22,7 +22,12 @@ Page({
       url: '/pages/index/index',
     })
   },
-
+  // 注册页
+  onRigister() {
+    wx.navigateTo({
+      url: '/pages/register/index',
+    })
+  },
   onLoad() {
     // wx.hideTabBar()
     wx.login({

@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="r-register">注册</view>
+  <view class="r-register" bindtap="onRigister">注册</view>
   <view class="r-title">
     <view class="e1">登录</view>
     <view>欢迎来到畅享程序，请使用手机号登录或一键登录</view>
